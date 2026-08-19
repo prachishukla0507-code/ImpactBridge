@@ -1,0 +1,321 @@
+/* ==========================================================================
+   ImpactBridge - Custom Styling & Theme Variables
+   Visual Direction: Trustworthy, Humanitarian, Modern, Clean, Professional
+   Palette: Slate / Deep Teal / Soft Emerald / Warm Amber
+   ========================================================================== */
+
+:root {
+  --ib-primary: #0f766e;        /* Deep Teal */
+  --ib-primary-dark: #0d5c63;   /* Deep Teal Dark */
+  --ib-primary-light: #14b8a6;  /* Teal Light */
+  --ib-primary-subtle: #f0fdfa; /* Teal Surface */
+  --ib-secondary: #059669;      /* Soft Green / Emerald */
+  --ib-secondary-light: #d1fae5;
+  --ib-urgent: #d97706;         /* Warm Amber */
+  --ib-urgent-light: #fef3c7;
+  --ib-danger: #dc2626;
+  --ib-danger-light: #fee2e2;
+  --ib-bg: #f8fafc;             /* Light off-white */
+  --ib-card-bg: #ffffff;
+  --ib-text-main: #0f172a;      /* Dark Navy / Slate 900 */
+  --ib-text-muted: #64748b;     /* Slate 500 */
+  --ib-border: #e2e8f0;         /* Slate 200 */
+}
+
+body {
+  margin: 0;
+  background-color: var(--ib-bg);
+  color: var(--ib-text-main);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Primary Button (Deep Teal) */
+.btn-teal {
+  background-color: var(--ib-primary);
+  border-color: var(--ib-primary);
+  color: #ffffff;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-teal:hover, .btn-teal:focus {
+  background-color: var(--ib-primary-dark);
+  border-color: var(--ib-primary-dark);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.btn-outline-teal {
+  border-color: var(--ib-primary);
+  color: var(--ib-primary);
+  background-color: transparent;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-teal:hover, .btn-outline-teal:focus {
+  background-color: var(--ib-primary);
+  border-color: var(--ib-primary);
+  color: #ffffff;
+}
+
+/* Secondary Button (Soft Green) */
+.btn-emerald {
+  background-color: var(--ib-secondary);
+  border-color: var(--ib-secondary);
+  color: #ffffff;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-emerald:hover, .btn-emerald:focus {
+  background-color: #047857;
+  border-color: #047857;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+/* Section Header Typography */
+.section-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ib-primary);
+  background-color: #e6fffa;
+  padding: 0.35rem 0.8rem;
+  border-radius: 50rem;
+  margin-bottom: 0.75rem;
+}
+
+.section-tag-emerald {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ib-secondary);
+  background-color: #ecfdf5;
+  padding: 0.35rem 0.8rem;
+  border-radius: 50rem;
+  margin-bottom: 0.75rem;
+}
+
+.section-tag-amber {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #b45309;
+  background-color: #fef3c7;
+  padding: 0.35rem 0.8rem;
+  border-radius: 50rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Card Styling */
+.ib-card {
+  background-color: var(--ib-card-bg);
+  border: 1px solid var(--ib-border);
+  border-radius: 0.875rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ib-card:hover {
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08);
+}
+
+/* Process Step Connector */
+.step-number-badge {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background-color: #f0fdf4;
+  color: var(--ib-primary);
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: 1px solid #ccfbf1;
+}
+
+/* Badges */
+.badge-urgent {
+  background-color: var(--ib-danger-light);
+  color: var(--ib-danger);
+  border: 1px solid #fca5a5;
+  font-weight: 600;
+}
+
+.badge-high {
+  background-color: var(--ib-urgent-light);
+  color: #92400e;
+  border: 1px solid #fde68a;
+  font-weight: 600;
+}
+
+.badge-medium {
+  background-color: #eff6ff;
+  color: #1e40af;
+  border: 1px solid #bfdbfe;
+  font-weight: 600;
+}
+
+.badge-open {
+  background-color: #eff6ff;
+  color: #1e40af;
+  border: 1px solid #dbeafe;
+  font-weight: 600;
+}
+
+.badge-fulfilled {
+  background-color: var(--ib-secondary-light);
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+  font-weight: 600;
+}
+
+.badge-partial {
+  background-color: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fde68a;
+  font-weight: 600;
+}
+
+/* Navbar Brand & Links */
+.navbar-brand-ib {
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: var(--ib-primary) !important;
+  letter-spacing: -0.02em;
+}
+
+.nav-link-ib {
+  font-weight: 500;
+  color: var(--ib-text-main) !important;
+  padding: 0.5rem 0.85rem !important;
+  border-radius: 0.5rem;
+  transition: all 0.15s ease;
+}
+
+.nav-link-ib:hover {
+  color: var(--ib-primary) !important;
+  background-color: rgba(15, 118, 110, 0.05);
+}
+
+.nav-link-ib.active {
+  color: var(--ib-primary) !important;
+  background-color: rgba(15, 118, 110, 0.08);
+  font-weight: 600;
+}
+
+/* Stock Progress Meter */
+.stock-meter-bar {
+  height: 6px;
+  border-radius: 4px;
+  background-color: #e2e8f0;
+  overflow: hidden;
+}
+
+.stock-meter-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+/* Stepper Component */
+.tracking-stepper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.tracking-step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  flex: 1;
+}
+
+.tracking-step-dot {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.tracking-step-dot.active {
+  background-color: var(--ib-primary);
+  color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(15, 118, 110, 0.2);
+}
+
+.tracking-step-dot.completed {
+  background-color: var(--ib-secondary);
+  color: #ffffff;
+}
+
+.tracking-step-dot.pending {
+  background-color: #f1f5f9;
+  color: #94a3b8;
+  border: 2px solid #cbd5e1;
+}
+
+/* Modal Overlay Backdrops */
+.modal-backdrop-custom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 1050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.modal-dialog-custom {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  animation: modalSlideIn 0.2s ease-out;
+}
+
+@keyframes modalSlideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Print/Voucher Styling */
+.consignment-voucher {
+  border: 2px dashed #cbd5e1;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+}
